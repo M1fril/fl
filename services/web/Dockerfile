@@ -61,7 +61,6 @@ COPY . $APP_HOME
 
 # chown all the files to the app user
 RUN chown -R app:app $APP_HOME
-RUN chmod +x entrypoint.sh
 
 # change to the app user
 USER app
